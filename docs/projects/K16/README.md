@@ -25,7 +25,7 @@
     | Đề số 17. Chat nhóm bằng RMI                                               | Nguyễn Ngọc Khánh      | [:octocat:github](https://github.com/NguyenKhanh04/LTM-Group-chat-using-RMI.git) | |
     | Đề số 15. Ứng dụng tra cứu thời tiết online                                | Hoàng Thế Khải         | [:octocat:github](https://github.com/Suna0011/LTM-Ungdungthoitiet)           |         |
     | Đề số 18. Ứng dụng trắc nghiệm trực tuyến                                  | Nguyễn Hoàng Liêm      | [:octocat:github](https://github.com/hliem24/LTM-Online-quiz-application)    |         |
-    | Đề số 19. Hệ thống quản lý ngân hàng mini                                  | Hoàng Mạnh Linh        | [:octocat:github](https://github.com/manhlinh3011/LTM-He-Thong-Quan-Ly-Ngan-Hang-Mini) | ✅ |
+    | Đề số 19. Hệ thống quản lý ngân hàng mini                                  | Hoàng Mạnh Linh        | [:octocat:github](https://github.com/manhlinh3011/LTM-He-Thong-Quan-Ly-Ngan-Hang-Mini) | |
     | Đề số 20. Hệ thống cảnh báo thời gian thực (Server gửi cảnh báo tới nhiều client qua UDP) | Lê Đức Khánh Long | [:octocat:github](https://github.com/longgym23/Real_Time_Alert_System)       |         |
     | Đề số 1. Ứng dụng chat Client-Server sử dụng TCP                           | Lê Thành Long          | [:octocat:github](https://github.com/ThanhLog/Chat-TCP)                      |         |
     | Đề Số 2: Chat Room dùng UDP Multicast                                      | Đào Đức Mạnh           | [:octocat:github](https://github.com/ducmanh04/Chat_Room_dung_UDP_Multicast.git) | |
