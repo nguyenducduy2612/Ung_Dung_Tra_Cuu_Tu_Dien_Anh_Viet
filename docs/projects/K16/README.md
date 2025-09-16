@@ -6,9 +6,9 @@
     | Tên đề tài             | Người thực hiện     | Source code     | Nổi bật     |
 
 - #### CNTT 16-03
-    | Tên đề tài                                                                 | Người thực hiện        | Source code                                                                 | Nổi bật |
-|----------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------|---------|
-| Đề số 1. Ứng dụng chat Client-Server sử dụng TCP                           | Nguyễn Thị Lan Anh     | [:octocat:github](https://github.com/lanh240224/LapTrinhMang)                |         |
+    | Tên đề tài | Người thực hiện | Source code | Nổi bật |
+    |------------|-----------------|-------------|---------|
+    | Đề số 1. Ứng dụng chat Client-Server sử dụng TCP                           | Nguyễn Thị Lan Anh     | [:octocat:github](https://github.com/lanh240224/LapTrinhMang)                |         |
 | Đề Số 2: Chat Room dùng UDP Multicast                                      | Đỗ Huy Dũng            | [:octocat:github](https://github.com/dungchay/LapTrinhMangBTL.git)           |         |
 | Đề số 3. Truyền file qua TCP                                               | Bùi Tuấn Dương         | [:octocat:github](https://github.com/Doubled2624/LTM-Truyen-File-TCP#)       |         |
 | Đề số 4. Truyền file qua UDP                                               | Lê Xuân Dương          | [:octocat:github](https://github.com/duongcutohaha/Truyen-file-UDP)          |         |
