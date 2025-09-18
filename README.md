@@ -22,7 +22,4 @@
 ## 2. CÔNG NGHỆ SỬ DỤNG
 ## 3. HƯỚNG DẪN CÀI ĐẶT
 ## 4. HÌNH ẢNH CHƯƠNG TRÌNH
-## 5. Liên hệ: 
-
----
-© 2025 Đại ca Nam Hưng. All rights reserved.
+## 5. Liên hệ
