@@ -72,7 +72,7 @@
 
 1. **Clone repository:**
     ```bash
-    git clone <https://github.com/namhung1910/UngDungTraCuuTuDienAnhViet.git>
+    git clone
 
     cd TuDienAnhViet
 2. **Biên dịch chương trình:**
@@ -129,4 +129,4 @@
     </p>
 
 ### 📞 Liên hệ: 
-Nếu có thắc mắc hoặc góp ý, vui lòng liên hệ qua namhung1910@gmail.com
+Nếu có thắc mắc hoặc góp ý, vui lòng liên hệ qua
