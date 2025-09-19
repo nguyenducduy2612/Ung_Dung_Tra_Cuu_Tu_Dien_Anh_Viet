@@ -77,41 +77,30 @@
 ### Giao diện Client
 - **Giao diện chính**:
     <p align="center">
-        <img src="docs/ClientHome.png" alt="Giao diện chính Client" width="800"/>
+        <img src="images/giaodien.png" alt="Giao diện chính Client" width="800"/>
     </p>
-    *(Mô tả: Giao diện khởi động với ô nhập từ, combobox chọn chế độ (Tiếng Anh/Việt), nút tra cứu và các trường kết quả trống.)*
 
 - **Gợi ý khi không tìm thấy từ**:
     <p align="center">
-        <img src="docs/ClientGoiY.png" alt="Gợi ý từ" width="800"/>
+        <img src="images/motanhapsai.png" alt="Gợi ý từ" width="800"/>
     </p>
-    *(Mô tả: Nhập từ sai (ví dụ: "appl"), hiển thị thông báo "Không tìm thấy" và danh sách gợi ý như "apple".)*
 
 - **Tra cứu tiếng Anh sang tiếng Việt**:
     <p align="center">
-        <img src="docs/ClientE2V.png" alt="Tra cứu Anh-Việt" width="800"/>
+        <img src="images/dichEN.png" alt="Tra cứu Anh-Việt" width="800"/>
     </p>
-    *(Mô tả: Tra từ "apple", hiển thị nghĩa "quả táo", phiên âm "/ˈæp.l̩/", từ loại "danh từ", và ví dụ minh họa.)*
+ 
 
 - **Tra cứu tiếng Việt sang tiếng Anh**:
     <p align="center">
-        <img src="docs/ClientV2E.png" alt="Tra cứu Việt-Anh" width="800"/>
+        <img src="images/dichVN.png" alt="Tra cứu Việt-Anh" width="800"/>
     </p>
-    *(Mô tả: Tra từ "táo", hiển thị nghĩa "apple" cùng các thông tin chi tiết khác.)*
-
-### Giao diện Server
-- **Console Server**:
-    <p align="center">
-        <img src="docs/ServerHome.png" alt="Console Server" width="800"/>
-    </p>
-    *(Mô tả: Console hiển thị trạng thái khởi động, số lượng từ đã tải (từ file CSV hoặc mặc định), và log kết nối từ client.)*
 
 ### Kho từ CSV
 - **Tệp dữ liệu mẫu**:
     <p align="center">
-        <img src="docs/KhoTu.png" alt="Tệp CSV" width="800"/>
+        <img src="images/khodulieu.png" alt="Tệp CSV" width="800"/>
     </p>
-    *(Mô tả: Tệp `english-vietnamese.csv` với các cột: english, vietnamese, ipa, part_of_speech, example_en, example_vi.)*
 
 ## 4. Hướng dẫn cài đặt
 
