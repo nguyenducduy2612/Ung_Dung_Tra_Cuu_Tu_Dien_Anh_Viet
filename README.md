@@ -28,13 +28,14 @@
   - Chạy trên cổng 2000, lắng nghe các yêu cầu tra cứu từ client.
 - **Client**: 
   - Giao diện đồ họa (GUI) được xây dựng bằng Java Swing.
-  - Hỗ trợ tra cứu từ vựng, hiển thị thông tin chi tiết (nghĩa, phiên âm IPA, từ loại, ví dụ minh họa).
+  - Hỗ trợ tra cứu từ vựng, hiển thị thông tin chi tiết (nghĩa, phiên âm IPA, từ loại, ví dụ minh họa, hình ảnh).
   - Cung cấp gợi ý từ khi không tìm thấy từ chính xác.
 
 ### 🔑 Tính năng chính:
 - **Tra cứu song ngữ**: Hỗ trợ tra cứu từ tiếng Anh sang tiếng Việt và ngược lại.
 - **Thông tin chi tiết**: Hiển thị nghĩa, phiên âm (IPA), từ loại, ví dụ minh họa bằng cả hai ngôn ngữ.
 - **Gợi ý thông minh**: Gợi ý các từ bắt đầu bằng ký tự đầu tiên khi từ tra cứu không tồn tại.
+- **Hình ảnh minh họa đa dạng**: Hiển thị hình ảnh minh họa khi tra từ điển tương ứng.
 - **Giao diện trực quan**: Giao diện client sử dụng Java Swing với bố cục rõ ràng, dễ sử dụng.
 - **Hỗ trợ đa luồng**: Server có thể xử lý nhiều client cùng lúc mà không bị gián đoạn.
 - **Quản lý dữ liệu linh hoạt**: Dữ liệu từ điển được tải từ tệp CSV (hỗ trợ UTF-8) hoặc dữ liệu mặc định.
@@ -98,6 +99,11 @@
 
 ### Kho từ CSV
 - **Tệp dữ liệu mẫu**:
+    <p align="center">
+        <img src="images/khodulieu.png" alt="Tệp CSV" width="800"/>
+    </p>
+### Kho từ images
+- **Tệp dữ liệu hinh ảnh**:
     <p align="center">
         <img src="images/khodulieu.png" alt="Tệp CSV" width="800"/>
     </p>
@@ -183,6 +189,7 @@
      - **Từ loại**: Danh từ, động từ, tính từ, v.v.
      - **Ví dụ (Tiếng Anh)**: Câu ví dụ bằng tiếng Anh.
      - **Ví dụ (Tiếng Việt)**: Câu ví dụ bằng tiếng Việt.
+       - **Hình ảnh minh họa**:Hình ảnh minh họa tương ứng với từ được tra.
    - Nếu không tìm thấy từ, ô **"Gợi ý"** sẽ hiển thị các từ bắt đầu bằng ký tự đầu tiên.
 
 3. **Thoát ứng dụng**:
