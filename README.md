@@ -105,7 +105,7 @@
 ### Kho từ images
 - **Tệp dữ liệu hinh ảnh**:
     <p align="center">
-        <img src="images/khodulieu.png" alt="Tệp CSV" width="800"/>
+        <img src="images/khodulieuanh.png" alt="Tệp ảnh minh họa" width="800"/>
     </p>
 
 ## 4. Hướng dẫn cài đặt
