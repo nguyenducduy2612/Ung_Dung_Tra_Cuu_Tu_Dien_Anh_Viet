@@ -38,6 +38,7 @@
 - **Hình ảnh minh họa đa dạng**: Hiển thị hình ảnh minh họa khi tra từ điển tương ứng.
 - **Giao diện trực quan**: Giao diện client sử dụng Java Swing với bố cục rõ ràng, dễ sử dụng.
 - **Hỗ trợ đa luồng**: Server có thể xử lý nhiều client cùng lúc mà không bị gián đoạn.
+- **Giao diện cho Server**: Giao diện hiển thị dễ quản lý Client, hiển thị log, và trạng thái Server.
 - **Quản lý dữ liệu linh hoạt**: Dữ liệu từ điển được tải từ tệp CSV (hỗ trợ UTF-8) hoặc dữ liệu mặc định.
 
 ### Mục tiêu:
@@ -106,6 +107,12 @@
 - **Tệp dữ liệu hinh ảnh**:
     <p align="center">
         <img src="images/khodulieuanh.png" alt="Tệp ảnh minh họa" width="800"/>
+    </p>
+    
+### Giao diện Server
+- **Hiển thị giao diện quản lý bên Server**:
+    <p align="center">
+        <img src="images/serverUI.png" alt="Giao diện chính Server" width="800"/>
     </p>
 
 ## 4. Hướng dẫn cài đặt
