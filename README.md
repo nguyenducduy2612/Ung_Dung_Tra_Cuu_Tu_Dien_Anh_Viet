@@ -23,14 +23,166 @@
 Ứng dụng Tra Cứu Từ Điển Anh - Việt là một dự án học tập được phát triển bằng **Java Socket** và **Java Swing** trong khuôn khổ nghiên cứu tại **AIoTLab**, Khoa Công Nghệ Thông Tin, Đại học Đại Nam. Ứng dụng cung cấp một hệ thống client-server cho phép tra cứu từ vựng song ngữ (Tiếng Anh ↔ Tiếng Việt) với giao diện người dùng thân thiện và khả năng xử lý đa luồng hiệu quả.
 ### Cấu trúc ứng dụng:
 - **Server**: 
+  - Quản lý dữ liệu từ điển từ CSDL hoặc sử dụng dữ liệu mặc định (apple, book, dog).
   - Quản lý dữ liệu từ điển từ cơ sở dữ liệu `dictionarydb` hoặc sử dụng dữ liệu mặc định (apple, book, dog).
   - Hỗ trợ đa luồng để xử lý nhiều kết nối từ client đồng thời.
   - Chạy trên cổng 2000, lắng nghe các yêu cầu tra cứu từ client.
   - Giao diện quản lý tử điển dễ dùng, có thể thêm sửa xóa từ, quản lý client truy cập.
 - **Client**: 
   - Giao diện đồ họa (GUI) được xây dựng bằng Java Swing.
-  - database để mở rộng từ điển.
+  - Hỗ trợ tra cứu từ vựng, hiển thị thông tin chi tiết (nghĩa, phiên âm IPA, từ loại, ví dụ minh họa, hình ảnh).
+  - Cung cấp gợi ý từ khi không tìm thấy từ chính xác.
 
+### 🔑 Tính năng chính:
+- **Tra cứu song ngữ**: Hỗ trợ tra cứu từ tiếng Anh sang tiếng Việt và ngược lại.
+- **Thông tin chi tiết**: Hiển thị nghĩa, phiên âm (IPA), từ loại, ví dụ minh họa bằng cả hai ngôn ngữ.
+- **Gợi ý thông minh**: Gợi ý các từ bắt đầu bằng ký tự đầu tiên khi từ tra cứu không tồn tại.
+- **Hình ảnh minh họa đa dạng**: Hiển thị hình ảnh minh họa khi tra từ điển tương ứng.
+- **Giao diện trực quan**: Giao diện client sử dụng Java Swing với bố cục rõ ràng, dễ sử dụng.
+- **Hỗ trợ đa luồng**: Server có thể xử lý nhiều client cùng lúc mà không bị gián đoạn.
+- **Giao diện cho Server**: Giao diện hiển thị dễ quản lý Client, hiển thị log, và trạng thái Server.
+- **Quản lý dữ liệu linh hoạt**: Dữ liệu từ điển được tải từ cơ sở dữ liệu hoặc dữ liệu mặc định.
+- **Quản lý từ điển**: Quản lý từ điển như thêm, sửa, xóa từ điển dễ dàng qua giao diện ServerServer
+
+### Mục tiêu:
+Ứng dụng được thiết kế để hỗ trợ học tập từ vựng Anh-Việt, đặc biệt phù hợp với học sinh, sinh viên và những người muốn tra cứu nhanh từ vựng. Dự án cũng là một bài tập thực hành về lập trình mạng (Socket) và giao diện người dùng (Swing).
+
+## 2. Công nghệ sử dụng
+
+### Client
+<p align="center">
+    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Java%20Swing-6DB33F?style=for-the-badge&logo=java&logoColor=white"/>
+</p>
+
+- **Java**: Ngôn ngữ lập trình chính, đảm bảo tính đa nền tảng.
+- **Java Swing**: Thư viện tạo giao diện đồ họa, cung cấp các thành phần như ô nhập liệu, nút bấm, combobox và khu vực hiển thị kết quả.
+
+### Server
+<p align="center">
+    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Socket%20Programming-00599C?style=for-the-badge&logo=java&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Multithreading-FF6F00?style=for-the-badge&logo=java&logoColor=white"/>
+</p>
+
+- **Java Socket**: Xử lý giao tiếp mạng giữa client và server thông qua giao thức TCP.
+- **Multithreading**: Mỗi client được xử lý trên một luồng riêng, đảm bảo server hoạt động ổn định với nhiều kết nối.
+
+### Quản lý dữ liệu
+<p align="center">
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Encoding-UTF--8-green?style=for-the-badge"/>
+</p>
+
+- **MySQL**: CSDL dictionarydb lưu trữ dữ liệu từ điển với các trường: từ tiếng Anh, nghĩa tiếng Việt, phiên âm, từ loại, ví dụ tiếng Anh, ví dụ tiếng Việt, ảnh minh họa.
+- **UTF-8 Encoding**: Đảm bảo hỗ trợ tiếng Việt đầy đủ, tránh lỗi hiển thị ký tự.
+
+## 3. Hình ảnh chương trình
+
+### Giao diện Client
+- **Giao diện chính**:
+    <p align="center">
+        <img src="images/giaodien.png" alt="Giao diện chính Client" width="800"/>
+    </p>
+
+- **Gợi ý khi không tìm thấy từ**:
+    <p align="center">
+        <img src="images/motanhapsai.png" alt="Gợi ý từ" width="800"/>
+    </p>
+
+- **Tra cứu tiếng Anh sang tiếng Việt**:
+    <p align="center">
+        <img src="images/dichEN.png" alt="Tra cứu Anh-Việt" width="800"/>
+    </p>
+ 
+
+- **Tra cứu tiếng Việt sang tiếng Anh**:
+    <p align="center">
+        <img src="images/dichVN.png" alt="Tra cứu Việt-Anh" width="800"/>
+    </p>
+
+### Kho từ CSV
+- **Tệp dữ liệu mẫu**:
+    <p align="center">
+        <img src="images/khodulieu.png" alt="Tệp CSV" width="800"/>
+    </p>
+### Kho từ images
+- **Tệp dữ liệu hinh ảnh**:
+    <p align="center">
+        <img src="images/khodulieuanh.png" alt="Tệp ảnh minh họa" width="800"/>
+    </p>
+    
+### Giao diện Server
+- **Hiển thị giao diện quản lý bên Server**:
+    <p align="center">
+        <img src="images/servergiaodien.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+### Giao diện Quản lý từ điển
+- **Hiển thị giao diện Quản lý từ điển bên Server**:
+    <p align="center">
+        <img src="images/quanlytudien.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+### Giao diện Thêm từ
+- **Hiển thị giao diện Thêm từ bên Server**:
+    <p align="center">
+        <img src="images/themtu.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+### Giao diện Sửa từ
+- **Hiển thị giao diện Sửa từ bên Server**:
+    <p align="center">
+        <img src="images/suatu.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+### Giao diện Xóa từ
+- **Hiển thị giao diện Xóa từ bên Server**:
+    <p align="center">
+        <img src="images/xoatu.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+### Giao diện Đăng nhập
+- **Hiển thị giao diện Đăng nhập**:
+    <p align="center">
+        <img src="images/dangnhap.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+### Giao diện Đăng ký
+- **Hiển thị giao diện Đăng ký**:
+    <p align="center">
+        <img src="images/dangky.png" alt="Giao diện chính Server" width="800"/>
+    </p>
+
+    
+## 4. Hướng dẫn cài đặt
+
+### Điều kiện tiên quyết
+- **Java Development Kit (JDK)**: Phiên bản 8 hoặc cao hơn (khuyến nghị JDK 17 để đảm bảo tương thích).
+- **Môi trường phát triển**: Sử dụng IDE như Eclipse, IntelliJ IDEA hoặc biên dịch thủ công bằng `javac`.
+- **Hệ điều hành**: Windows, macOS, Linux (đã kiểm tra trên Windows 10 và Ubuntu 20.04).
+- **MySQL Workbench** (tùy chọn): Quản lý dữ liệu, tài khoản, mật khẩu.
+### Các bước cài đặt
+1. **Tải mã nguồn**:
+   - Clone repository từ GitHub (hoặc tải file zip):
+     ```
+     git clone https://github.com/yourusername/tudien.git
+     ```
+   - Hoặc tải trực tiếp `Server.java` và `Client.java`.
+   - Tạo thư mục dự án với cấu trúc:
+     ```
+     tudien/
+     ├── Server.java
+     ├── Client.java
+     └── Liên kết CSDL (Tùy chọn)
+     ```
+
+2. **Chuẩn bị dữ liệu**:
+   - Tạo CSDL trong MySQL với định dạng:
+     ```
+     english,vietnamese,ipa,part_of_speech,example_en,example_vi
+     apple,quả táo,/ˈæp.l̩/,danh từ,I ate an apple for breakfast.,Tôi ăn một quả táo vào bữa sáng.
+     book,cuốn sách,/bʊk/,danh từ,She is reading a book in the library.,Cô ấy đang đọc một cuốn sách trong thư viện.
+     dog,con chó,/dɒɡ/,danh từ,The dog is playing in the yard.,Con chó đang chơi ngoài sân.
+     ```
+   - **Lưu ý**: 
+     - Nếu không có CSDLCSDL, ứng dụng sẽ sử dụng dữ liệu mặc định với 3 từ: apple, book, dog.
+     - Có thể thêm nhiều từ vào tệp CSDL để mở rộng từ điển.
+  - database để mở rộng từ điển.
 3. **Biên dịch mã nguồn**:
    - Mở terminal/command prompt, di chuyển đến thư mục dự án:
      ```
@@ -86,7 +238,7 @@
 ### Lưu ý:
 - Ứng dụng hiện chỉ hỗ trợ tra cứu từ đơn. Để hỗ trợ cụm từ hoặc câu, cần nâng cấp logic xử lý.
 - Để triển khai trên mạng, chỉnh sửa `localhost` trong `Client.java` thành địa chỉ IP của server.
-- Nếu gặp lỗi hiển thị tiếng Việt, kiểm tra encoding của tệp CSV (phải là UTF-8).
+- Nếu gặp lỗi hiển thị tiếng Việt, kiểm tra encoding của bảng dictionarydb (phải là UTF-8).
 
 ## 5. Thông tin liên hệ
 
