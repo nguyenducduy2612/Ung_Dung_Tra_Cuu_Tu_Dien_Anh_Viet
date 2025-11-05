@@ -125,12 +125,12 @@
 ### Giao diện Thêm từ
 - **Hiển thị giao diện Thêm từ bên Server**:
     <p align="center">
-        <img src="images/themtu.png" alt="Giao diện thêm từ Server" width="800"/>
+        <img src="images/themtu.png" alt="Giao diện thêm từ Server" width="500"/>
     </p>
 ### Giao diện Sửa từ
 - **Hiển thị giao diện Sửa từ bên Server**:
     <p align="center">
-        <img src="images/suatu.png" alt="Giao diện sửa Server" width="800"/>
+        <img src="images/suatu.png" alt="Giao diện sửa Server" width="500"/>
     </p>
 ### Giao diện Xóa từ
 - **Hiển thị giao diện Xóa từ bên Server**:
@@ -140,12 +140,12 @@
 ### Giao diện Đăng nhập
 - **Hiển thị giao diện Đăng nhập**:
     <p align="center">
-        <img src="images/dangnhap.png" alt="Giao diện đăng nhập" width="800"/>
+        <img src="images/dangnhap.png" alt="Giao diện đăng nhập" width="400"/>
     </p>
 ### Giao diện Đăng ký
 - **Hiển thị giao diện Đăng ký**:
     <p align="center">
-        <img src="images/dangky.png" alt="Giao diện đăng kýký" width="800"/>
+        <img src="images/dangky.png" alt="Giao diện đăng kýký" width="400"/>
     </p>
 
     
@@ -180,7 +180,7 @@
      dog,con chó,/dɒɡ/,danh từ,The dog is playing in the yard.,Con chó đang chơi ngoài sân.
      ```
    - **Lưu ý**: 
-     - Nếu không có CSDLCSDL, ứng dụng sẽ sử dụng dữ liệu mặc định với 3 từ: apple, book, dog.
+     - Nếu không có CSDL, ứng dụng sẽ sử dụng dữ liệu mặc định với 3 từ: apple, book, dog.
      - Có thể thêm nhiều từ vào tệp CSDL để mở rộng từ điển.
   - database để mở rộng từ điển.
 3. **Biên dịch mã nguồn**:
