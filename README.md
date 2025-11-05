@@ -101,10 +101,10 @@
         <img src="images/dichVN.png" alt="Tra cứu Việt-Anh" width="800"/>
     </p>
 
-### Kho từ CSV
+### Kho từ CSDL
 - **Tệp dữ liệu mẫu**:
     <p align="center">
-        <img src="images/khodulieu.png" alt="Tệp CSV" width="800"/>
+        <img src="images/khodulieu.png" alt="Bảng Dictionarydb" width="800"/>
     </p>
 ### Kho từ images
 - **Tệp dữ liệu hinh ảnh**:
@@ -120,32 +120,32 @@
 ### Giao diện Quản lý từ điển
 - **Hiển thị giao diện Quản lý từ điển bên Server**:
     <p align="center">
-        <img src="images/quanlytudien.png" alt="Giao diện chính Server" width="800"/>
+        <img src="images/quanlytudien.png" alt="Giao diện quản lý từ điển" width="800"/>
     </p>
 ### Giao diện Thêm từ
 - **Hiển thị giao diện Thêm từ bên Server**:
     <p align="center">
-        <img src="images/themtu.png" alt="Giao diện chính Server" width="800"/>
+        <img src="images/themtu.png" alt="Giao diện thêm từ Server" width="800"/>
     </p>
 ### Giao diện Sửa từ
 - **Hiển thị giao diện Sửa từ bên Server**:
     <p align="center">
-        <img src="images/suatu.png" alt="Giao diện chính Server" width="800"/>
+        <img src="images/suatu.png" alt="Giao diện sửa Server" width="800"/>
     </p>
 ### Giao diện Xóa từ
 - **Hiển thị giao diện Xóa từ bên Server**:
     <p align="center">
-        <img src="images/xoatu.png" alt="Giao diện chính Server" width="800"/>
+        <img src="images/xoatu.png" alt="Giao diện xóa từ Server" width="800"/>
     </p>
 ### Giao diện Đăng nhập
 - **Hiển thị giao diện Đăng nhập**:
     <p align="center">
-        <img src="images/dangnhap.png" alt="Giao diện chính Server" width="800"/>
+        <img src="images/dangnhap.png" alt="Giao diện đăng nhập" width="800"/>
     </p>
 ### Giao diện Đăng ký
 - **Hiển thị giao diện Đăng ký**:
     <p align="center">
-        <img src="images/dangky.png" alt="Giao diện chính Server" width="800"/>
+        <img src="images/dangky.png" alt="Giao diện đăng kýký" width="800"/>
     </p>
 
     
